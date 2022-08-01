@@ -1,0 +1,32 @@
+.footer-address {
+  font-style: normal;
+  color: $background-primary-color;
+  line-height: 1.71;
+
+  margin-top: 20px;
+
+  @include for-tablet-down {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-address__info {
+  color: $address-info-color;
+  text-decoration: none;
+
+  margin-top: 9px;
+  display: block;
+
+  transition: color 250ms $timing-function;
+
+  &:first-child {
+    margin: 0;
+
+    color: $background-primary-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,37 @@
+.form-check {
+  position: relative;
+  display: block;
+
+  padding-left: 23px;
+  margin-bottom: 30px;
+}
+
+.form-check__checkbox {
+  appearance: none;
+}
+
+.form-check__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+
+  .form-check__checkbox:checked + & {
+    border: none;
+    background-color: $accent-color;
+  }
+}
+
+.form-check__label {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+
+.form-check__terms-link {
+  color: $accent-color;
+}

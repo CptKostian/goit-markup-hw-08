@@ -1,0 +1,20 @@
+.social-mob-list {
+  @extend %remove-useless;
+  display: flex;
+  display: none;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.social-mob-list__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+
+  padding: 10px;
+}

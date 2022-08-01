@@ -1,0 +1,16 @@
+.close-button {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+
+  margin: 8px;
+  padding: 7px;
+
+  cursor: pointer;
+
+  background-color: $background-primary-color;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}

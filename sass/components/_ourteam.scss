@@ -1,0 +1,25 @@
+.ourteam {
+  @include section(94px);
+  background-color: $background-ourteam-color;
+}
+
+.ourteam__container {
+  @extend %container;
+}
+
+.ourteam__title {
+  @extend %section-title;
+}
+
+.ourteam__list {
+  @extend %remove-useless;
+  font-size: 16px;
+  line-height: 1.1875;
+
+  @include for-tablet-up {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

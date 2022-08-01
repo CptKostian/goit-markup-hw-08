@@ -1,0 +1,38 @@
+@import './utils/vars';
+@import './utils/normalize';
+@import './utils/vh';
+@import './utils/plaseholders';
+
+@import './components/header';
+@import './components/logo';
+@import './components/container-menu';
+@import './components/navigation';
+@import './components/header-address';
+@import './components/footer';
+@import './components/social-list';
+
+@import './components/hero';
+@import './components/open-button';
+@import './components/advantages';
+@import './components/advantages-item';
+@import './components/whatwedo';
+@import './components/whatwedo-item';
+@import './components/ourteam';
+@import './components/employee';
+@import './components/clients';
+@import './components/company';
+
+@import './components/backdrop';
+@import './components/close-button';
+@import './components/forms/form';
+@import './components/forms/form-check';
+@import './components/forms/form-field';
+@import './components/forms/form-comment';
+
+@import './components/example';
+@import './components/example-item';
+@import './components/filter-list';
+
+@import './components/footer-address';
+@import './components/join';
+@import './components/subscribe';

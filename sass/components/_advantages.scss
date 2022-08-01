@@ -1,0 +1,19 @@
+.advantages {
+  @include section(94px);
+
+  background-color: $background-primary-color;
+}
+
+.advantages__container {
+  @extend %container;
+}
+
+.advantages__list {
+  @extend %remove-useless;
+
+  @include for-tablet-up {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

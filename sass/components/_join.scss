@@ -1,0 +1,23 @@
+.join {
+  @include for-tablet-down {
+    margin-bottom: 60px;
+  }
+
+  @include for-tablet-up {
+    margin-left: 105px;
+  }
+
+  @include for-desktop-up {
+    margin-left: 70px;
+  }
+}
+
+.join__title {
+  margin-bottom: 20px;
+
+  font-size: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: $background-primary-color;
+}

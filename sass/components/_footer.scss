@@ -1,0 +1,25 @@
+.footer {
+  background-color: $background-secondary-color;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  @extend %container;
+  text-align: center;
+
+  @include for-tablet-up {
+    display: flex;
+    width: 768px;
+    gap: 60px;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @include for-desktop-up {
+    gap: 0;
+    width: 1200px;
+  }
+}

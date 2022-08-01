@@ -1,0 +1,41 @@
+.hero {
+  text-align: center;
+
+  padding: 118px 0;
+
+  background-color: $hero-bg-color;
+  background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color),
+    url(../img/bg-hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include for-phone-down {
+    background-size: cover;
+  }
+
+  @include for-tablet-up {
+    background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color),
+      url(../img/bg-hero-tabl.jpg);
+  }
+
+  @include for-desktop-up {
+    background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color), url(../img/bg-hero.jpg);
+    padding: 200px 0;
+  }
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $background-primary-color;
+
+  margin-bottom: 30px;
+
+  @include for-desktop-up {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

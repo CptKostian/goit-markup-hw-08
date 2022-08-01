@@ -1,0 +1,24 @@
+.clients {
+  @include section(94px);
+  background-color: $background-primary-color;
+}
+
+.clients__container {
+  @extend %container;
+}
+
+.clients__title {
+  @extend %section-title;
+}
+
+.clients__list {
+  @extend %remove-useless;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+
+  @include for-tablet-up {
+    justify-content: center;
+  }
+}
