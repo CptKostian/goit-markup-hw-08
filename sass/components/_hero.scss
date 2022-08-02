@@ -8,6 +8,12 @@
     url(../img/bg-hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color),
+      url(../img/bg-hero-mobile@2x.jpg);
+  }
 
   @include for-phone-down {
     background-size: cover;
@@ -16,11 +22,22 @@
   @include for-tablet-up {
     background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color),
       url(../img/bg-hero-tabl.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color),
+        url(../img/bg-hero-tabl@2x.jpg);
+    }
   }
 
   @include for-desktop-up {
     background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color), url(../img/bg-hero.jpg);
     padding: 200px 0;
+    background-size: 1600px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color),
+        url(../img/bg-hero@2x.jpg);
+    }
   }
 }
 
