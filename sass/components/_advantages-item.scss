@@ -1,14 +1,16 @@
 .advantages-item {
+  @include for-tablet-down {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @include for-tablet-up {
     width: calc((100% - 30px) / 2);
   }
 
   @include for-desktop-up {
     width: calc((100% - 90px) / 4);
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 
