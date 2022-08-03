@@ -19,25 +19,29 @@
     background-size: cover;
   }
 
-  @include for-tablet-up {
+  @include for-phone-up {
     background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color),
       url(../img/bg-hero-tabl.jpg);
-
+    background-size: cover;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color),
         url(../img/bg-hero-tabl@2x.jpg);
     }
   }
 
-  @include for-desktop-up {
+  @include for-tablet-up {
     background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color), url(../img/bg-hero.jpg);
-    padding: 200px 0;
-    background-size: 1600px;
+    background-size: cover;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to top, $linear-gradient-color, $linear-gradient-color),
         url(../img/bg-hero@2x.jpg);
     }
+  }
+
+  @include for-desktop-up {
+    padding: 200px 0;
+    background-size: 1600px;
   }
 }
 
